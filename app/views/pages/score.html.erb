@@ -1,0 +1,13 @@
+<div class="container" style="text-align: center;">
+  <h1>Your word</h1>
+  <p><%= @longest_word %></p>
+  <h2>Translation</h2>
+  <p><%= @get_translation %></p>
+  <h2>Your score</h2>
+  <p><%= @score %></p>
+
+  <p><%= @start_time %></p>
+  <p><%= @end_time %></p>
+
+  <%= link_to "Play new game", '/game' %>
+</div>

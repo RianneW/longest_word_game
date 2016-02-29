@@ -1,0 +1,14 @@
+<div class="container" style="text-align: center;">
+  <h1>Welcome to this awesome longest word game!</h1>
+  <p> Your grid: </p>
+  <h1><%= @grid %></h1>
+
+  <form action="/score">
+    <label for="question"</label>
+    <input name="longest_word" type="text" placeholder="type the longest word" id="question">
+    <input name="grid" type="hidden" id="question">
+    <input name="start_time" type="hidden" id="question">
+  </form>
+
+  <p><%= link_to "This grid sucks. New grid please.", '/game' %></p>
+</div>
